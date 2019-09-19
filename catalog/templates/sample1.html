@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>APSSDC</title>
+</head>
+<body>
+	<h1>Table</h1>
+	<table border="3">
+	<tr>
+		<th>S.no</th>
+		<th>Name</th>
+		<th>Branch</th>
+		<th>Dept</th>
+	</tr>
+	{% for i in dummy_data%}
+	<tr>
+		<td>{{i.s_no}}</td>
+		<td>{{i.name}}</td>
+		<td>{{i.branch}}</td>
+		<td>{{i.dept}}</td>
+	</tr>
+	{%endfor%}
+</table>
+</body>
+</html>
